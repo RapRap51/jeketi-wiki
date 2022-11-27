@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./background.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/title.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Source+Serif+Pro:wght@600&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <script src="./js/Pelengkap.js"></script>
+    <title>Form Pembelian</title>
+</head>
+
+<body onload="startTime()">
+
+    <div class="grid">
+        <div class="sidebar">
+            <marquee behavior="" direction="left" class="tfont3 tz2">Selamat datang di JEKETI WIKI 48</marquee>
+            <table style="width: 100%;">
+                <tr style="height: 50px;">
+                    <td style="width : 15%">
+                        <a href="./index.html">
+                        <img src="./assets/LOGO Web ver 2.png" alt="" style="height: 50px"></a>
+                    </td>
+                    <td style="width : 70%">
+                        <table class="cbor1" border="2px" align="center" style="border-collapse: collapse;">
+                            <tr style="height: 40px;">
+                                <td class="dashboard fc1"><a href="./Beritap1.html">News</a></td>
+                                <td class="dashboard fc1"><a href="./Schedule.html">Schedule</a></td>
+                                <td class="dashboard fc1"><a href="./homepage.html">Members</a></td>
+                                <td class="dashboard fc1">JKT48 Theater</td>
+                                <td class="dashboard fc1">Profile</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width: 10%" align="center">
+                        <div class="tfont2 tz3" id="timeskrng"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="news_content tfont3 tz2 tc3">
+            <table class="cbor1" border="1" style="border-collapse: collapse;">
+                <tr>
+                    <td>
+                        <h3 align="center">NEWS</h3>
+                        <p class="tz2 mpara"><a href="./news/News1.html" style="text-decoration:none;">Pengumuman
+                                Mengenai Pre-Order
+                                Digital Photobook “Airport Fashion” dengan Bonus Video Call with JKT48</a></p>
+                        <p class="tz1 tc2 mpara3">16 November 2022</p>
+                        <hr>
+                        <p class="tz2 mpara"><a href="./news/News2.html" style="text-decoration:none;">Pengumuman
+                                Mengenai Pertunjukan
+                                Perdana “Pajama Drive” oleh Generasi 10 JKT48</a></p>
+                        <p class="tz1 tc2 mpara3">14 November 2022</p>
+                        <hr>
+                        <p class="tz2 mpara"><a href="./news/News3.html" style="text-decoration:none;">Pengumuman
+                                Mengenai Penjualan dan
+                                Detail Tiket JKT48 11th Anniversary Concert : Flying High</a></p>
+                        <p class="tz1 tc2 mpara3">12 November 2022</p>
+                        <hr>
+                        <p class="tz2 mpara"><a href="./news/News4.html" style="text-decoration:none;">Pengumuman
+                                Mengenai CD di Boxset
+                                “Flying High”</a></p>
+                        <p class="tz1 tc2 mpara3">2 November 2022</p>
+                        <hr>
+                        <p class="tz2 mpara"><a href="" style="text-decoration:none;">Pengumuman Mengenai Penambahan
+                                Sesi pada Video Call with JKT48, “Sinistrous Memoirs” Digital Photobook</a></p>
+                        <p class="tz1 tc2 mpara3">22 Oktober 2022</p>
+                        <hr>
+                        <p class="tz2 mpara"><a href="" style="text-decoration:none;">Pengumuman Mengenai Pre-Order
+                                Digital Photobook “Sinistrous Memoirs” dengan Bonus Video Call with JKT48</a></p>
+                        <p class="tz1 tc2 mpara3">10 Oktober 2022</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="mpara" align="center">Lokasi Theater JKT48
+                <iframe width="310" height="200" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=fx%20sudirman&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </p>
+            <p class="mpara" align="center">
+                <iframe width="310" height="200"
+                    src="https://www.youtube.com/embed/eq0s1atl_K0?autoplay=1&mute=1"></iframe>
+            </p>
+        </div>
+        <!-- Next Update heightnya div -->
+        <div class="content" style="height: 1500px;">
+            <h2 class="judul tfont3 tz2 tc3">Formulir Pembelian Tiket Theater</h2>
+            <p class="mpara tfont3 tz1">Harap pilih metode pembayaran Tiket Theater Tunas di Balik Seragam.
+                <br>Bagian bertanda <span class="tc4">*</span> harus diisi
+            </p>
+            <form action="" class="mpara tfont3 tz1">
+                <label for="metode">Metode Pembayaran:</label><br>
+                <select class="fillbox2" id="metode" name="metode">
+                    <option value="JKT48 Points">JKT48 Points</option>
+                    <option value="Transfer Bank">Transfer Bank</option>
+                    <option value="Kartu Kredit">Kartu Kredit</option>
+                </select><br>
+                <label for="fname">Nama Lengkap<span class="tc4">*</span></label><br>
+                <input class="fillbox" type="text" id="fname"><br>
+                <label for="email">Email<span class="tc4">*</span></label><br>
+                <input class="fillbox" type="text" id="email"><br>
+                <label for="alamat">Alamat<span class="tc4">*</span></label><br>
+                <input class="fillbox" type="text" id="alamat"><br>
+                <label for="country">Negara</label><br>
+                <input class="fillbox" type="country" id="country"><br>
+                <label for="NoHP">Nomor Handphone<span class="tc4">*</span></label><br>
+                <input class="fillbox" type="NoHP" id="noHP"><br>
+
+                Syarat dan ketentuan<span class="tc4">*</span><br>
+                <div class="scroll">
+                    <p>Perjanjian ini adalah syarat dan ketentuan dari layanan JKT48 Point dan Bonus Point (untuk
+                        selanjutnya: “Layanan ini”) yang ditawarkan oleh JKT48 Operation Team (untuk selanjutnya:
+                        “JOT”). Pengguna harus terlebih dahulu menyetujui isi perjanjian sebelum mulai menggunakan
+                        layanan ini.</p>
+                    <h3>Pasal 1. Tujuan</h3>
+                    <p>Berikut adalah pengertian dari istilah yang akan dipakai dalam perjanjian ini.<br /><br />
+                        1. Perjanjian ini adalah syarat dan ketentuan dari layanan JKT48 Point (untuk selanjutnya:
+                        “Layanan ini”) yang ditawarkan oleh JKT48 Operation Team (untuk selanjutnya: “JOT”) kepada
+                        anggota gratis atau anggota OFC (JKT48 Official Fan Club) (untuk selanjutnya: “Anggota”).<br />
+                        2. Untuk hal-hal yang tidak tertera dalam perjanjian ini, akan diselesaikan oleh kerja sama
+                        antara Anggota dan JOT.</p>
+
+                    <h3>Pasal 2. Mendapatkan Point</h3>
+                    <p>1. Layanan Point hanya dapat digunakan oleh Anggota.<br /><br />
+                        2. Saat anggota melakukan pembelian Point dengan metode yang telah ditentukan oleh JOT atau
+                        dengan metode lain yang ditunjuk oleh JOT, maka setiap 1 rupiah akan mendapatkan 1
+                        Point.<br /><br />
+                        3. Point hanya dapat digunakan dengan website, layanan, dan metode transaksi yang telah
+                        ditetapkan. Jumlah pemberian Point dan ketentuan penggunaan ditentukan oleh JOT.<br /><br />
+                        4. Untuk Point yang didapatkan Anggota dengan sah sesuai perjanjian ini, apabila terdapat
+                        masalah dalam pemrograman atau hal lainnya yang membuat saldo Point Anggota tidak tercatat
+                        dengan benar, JOT berhak untuk melakukan penyesuaian agar saldo Point tersebut menjadi angka
+                        yang seharusnya.</p>
+
+                    <h3>Pasal 3. Pengelolaan Point</h3>
+                    <p>1. JOT wajib untuk menginformasikan kepada Anggota mengenai saldo Point yang berubah sesuai
+                        dengan pembelian atau penggunaan oleh Anggota.<br /><br />
+                        2. Apabila Anggota merasa curiga dengan transaksi Point yang disebut di atas, diharapkan untuk
+                        segera mengontak JOT dan menjelaskan duduk perkaranya.<br /><br />Keputusan terakhir mengenai
+                        saldo Point dipegang oleh JOT dan wajib ditaati oleh Anggota.</p>
+
+                    <h3>Pasal 4. Larangan Mengenai Pemindahan Point</h3>
+                    <p>1. Anggota tidak dapat memindahkan Point yang dimiliki kepada Anggota lain. Tidak diperbolehkan
+                        untuk membagi Point yang dimiliki.<br /><br />
+                        2. Apabila satu Anggota memiliki beberapa akun, Point yang dimiliki oleh tiap akun tidak dapat
+                        digabungkan dan digunakan menjadi satu.</p>
+
+                    <h3>Pasal 5. Penghapusan Point</h3>
+                    <p>1. Setelah Anggota mendapatkan Point, JOT dapat menghapus Point yang dimiliki oleh Anggota dengan
+                        kondisi tertentu.<br /><br />
+                        2. JOT berhak untuk menghapus sebagian atau seluruh Point yang dimiliki oleh Anggota tanpa
+                        pemberitahuan sebelumnya apabila JOT menemukan kondisi di bawah ini.<br /><br />
+                        a.) Terdapat hal yang ilegal atau perbuatan curang yang dilakukan oleh Anggota<br /><br />
+                        b.) Terdapat pelanggaran perjanjian ini atau pelanggaran peraturan lain yang telah ditetapkan
+                        oleh JOT<br /><br />
+                        c.) Apabila JOT merasa perlu dan layak untuk menghapus Point yang dimiliki Anggota dengan alasan
+                        tertentu<br /><br />
+                        d.) Apabila terdapat perbuatan yang melanggar hukum.<br /><br />
+                        3. Apabila Point yang dimiliki Anggota telah lewat masa berlakunya (terdapat di Pasal 8. Masa
+                        Berlaku Point), maka Point akan terhapus secara otomatis.<br /><br />
+                        4. JOT tidak akan bertanggung jawab atau memberi kompensasi pengganti terhadap Point yang sudah
+                        lewat Masa Berlaku-nya.</p>
+
+                    <h3>Pasal 6. Penggunaan Point</h3>
+                    <p>1. Point hanya dapat digunakan oleh Anggota.<br /><br />
+                        2. Point yang dimiliki oleh Anggota dapat digunakan dalam pembayaran untuk produk yang
+                        ditawarkan oleh JOT dengan menggunakan metode transaksi yang ditentukan oleh JOT. Aturan dasar
+                        dari penggunaan tersebut adalah 1 Point = Rp 1,-. Setelah proses transaksi selesai, Point akan
+                        dikurangi dari saldo Point Anggota sesuai dengan nominal transaksi.<br /><br />
+                        3. Dalam transaksi, Point tidak dapat digunakan untuk membayar hanya sebagian nilai transaksi
+                        tersebut. Apabila pembayaran menggunakan Point maka seluruh pembayaran transaksi harus memakai
+                        Point.<br /><br />
+                        4. Penggunaan Point dibatasi untuk pembayaran layanan dan produk yang ditawarkan oleh JOT. Di
+                        kemudian waktu, JOT berhak memperbarui batasan tersebut.<br /><br />
+                        5. Apabila setelah Anggota menggunakan Point untuk pembayaran transaksi dan didapati bahwa
+                        terdapat pelanggaran oleh Anggota dalam penggunaan Point, maka JOT berhak untuk meminta
+                        pembayaran dalam bentuk uang tunai sejumlah Point yang terpakai kepada Anggota. Dalam kasus ini,
+                        Anggota diharuskan untuk membayar sejumlah nominal transaksi kepada JOT. </p>
+
+                    <h3>Pasal 7. Pembatalan Penghapusan Point setelah Penggunaan</h3>
+                    <p>Atas alasan apapun, pembatalan penghapusan Point setelah penggunaan Point untuk transaksi tidak
+                        dapat dilakukan.</p>
+
+                    <h3>Pasal 8. Masa Berlaku Point</h3>
+                    <p>Masa berlaku Point adalah 180 hari sejak hari terakhir pembelian Point. Apabila tidak dilakukan
+                        pembelian Point lagi dalam Masa Berlaku tersebut, maka seluruh Point yang dimiliki akan hilang.
+                        Harap perhatiannya. </p>
+
+                    <h3>Pasal 9. Point Tidak Dapat Diuangkan</h3>
+                    <p>Atas alasan apapun, anggota tidak dapat menguangkan Point yang dimiliki.</p>
+
+                    <h3>Pasal 10. Penggunaan oleh Pihak Ketiga</h3>
+                    <p>1. Penggunaan Point hanya dapat dilakukan oleh Anggota yang terdaftar telah memiliki Point
+                        tersebut. Penggunaan oleh Pihak Ketiga tidak diperkenankan.<br /><br />
+                        2. JOT akan memeriksa data Anggota pada saat penggunaan Point untuk menentukan apakah pengguna
+                        Point adalah Anggota yang sebenarnya. Apabila didapati kebohongan, pemalsuan identitas, atau
+                        kasus yang terkait sehingga pengguna Point didapati sebagai Pihak Ketiga, JOT tidak akan
+                        mengembalikan Point yang telah dipakai. Seluruh kerugian akan ditanggung oleh Anggota dan JOT
+                        tidak bertanggung jawab akan hal tersebut.</p>
+
+                    <h3>Pasal 11. Apabila Berhenti atau Kehilangan Keanggotaan</h3>
+                    <p>Apabila Anggota kehilangan keanggotaan dengan alasan apapun, maka seluruh Point yang dimiliki dan
+                        hak penggunaannya untuk seluruh layanan juga akan ikut hilang. Anggota tidak dapat melakukan
+                        klaim apapun terhadap JOT dan JOT tidak bertanggung jawab akan hal tersebut.</p>
+
+                    <h3>Pasal 12. Disclaimer</h3>
+                    <p>JOT membuat sistem layanan ini dengan menggunakan teknologi terbaik, tetapi tidak ada jaminan
+                        bahwa akan bebas seluruhnya dari Force Majeur.<br /><br />
+                        Apabila terdapat permasalahan Force Majeur dalam koneksi kabel data atau komputer sehingga
+                        mengakibatkan gangguan koneksi, keterlambatan, pemberhentian, atau kehilangan data yang
+                        berhubungan dengan penggunaan Point atau layanan ini, maka JOT tidak bertanggung jawab atas
+                        seluruh kerugian yang terjadi.
+                    </p>
+
+                    <h3>Pasal 13. Ganti Rugi</h3>
+                    <p>Apabila Anggota mengakibatkan kerugian terhadap JOT yang diakibatkan oleh kecurangan, pelanggaran
+                        peraturan, pelanggaran hukum, atau kegiatan pelanggaran yang melibatkan pihak ketiga, maka JOT
+                        berhak menuntut kompensasi kerugian dari Anggota yang bersangkutan.</p>
+
+                    <h3>Pasal 14. Informasi Kepada Anggota</h3>
+                    <p>Melalui E-mail, JOT berhak untuk mengirimkan informasi mengenai Point, informasi mengenai program
+                        JKT48, dan pengumuman penting yang berkaitan dengan JKT48. Anggota mengerti dan menyetujui hal
+                        ini. </p>
+
+                    <h3>Pasal 15. Mengenai Perubahan, Penghentian, atau Penutupan Layanan Ini </h3>
+                    <p>1. Apabila terdapat perubahan dalam perjanjian maupun layanan ini (seperti penghapusan Point,
+                        penghentian pemberian Point, perubahan persentase pemberian Point, dsb.) maka JOT berhak untuk
+                        melakukan perubahan tersebut tanpa menginformasikan terlebih dahulu pada Anggota apabila
+                        berhubungan dengan pemberhentian layanan ini. Anggota mengerti dan menyetujui hal
+                        ini.<br /><br />
+                        2. JOT tidak bertanggung jawab untuk kerugian Anggota yang terjadi dikarenakan hal di atas.</p>
+
+                    <h3>Pasal 16. Kontak</h3>
+                    <p>Kontak mengenai layanan ini dapat dilakukan melalui alamat berikut:<br />
+                        E-mail:<a href="support@jkt48.com">support@jkt48.com</a><br />
+                        <br />
+                        JKT48 Operation Team<br />
+                        Dibuat pada: 1 Desember 2016
+                    </p>
+                </div>
+                <input type="checkbox" id="agree" value="true">
+                <label for="agree"> <b>Menyetujui syarat dan ketentuan</b></label><br>
+                <a href="./FinishSnM.html">
+                    <input class="button" type="button" onclick="coba()" value="Submit"></a>
+
+            </form>
+
+        </div>
+        <div class="content_tambahan">
+        </div>
+        <div></div>
+        <div>
+            <!-- <p class="mpara" align="center">Lokasi Theater JKT48
+                <iframe width="310" height="200" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=fx%20sudirman&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </p>
+            <p class="mpara" align="center">
+                <iframe width="310" height="200"
+                    src="https://www.youtube.com/embed/eq0s1atl_K0?autoplay=1&mute=1"></iframe>
+            </p> -->
+        </div>
+        <div class="des_footer">
+            <p>
+                <a href="">TOP</a>
+                |
+                <a href="">News</a>
+                |
+                <a href="">Member</a>
+                |
+                <a href="">Apa itu JKT48</a>
+                |
+                <a href="">Kontak</a>
+                |
+                <a href="">Syarat dan Ketentuan</a>
+                |
+            </p>
+            <p>
+                <a href=""><img src="./assets/icons8-twitter-circled-50 (1).png" alt="" height="35px"></a>
+
+                <a href=""><img src="./assets/icons8-instagram-64.png" alt="" height="50px"></a>
+            </p>
+            <p>
+                Copyright © 2022 RapRap
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
